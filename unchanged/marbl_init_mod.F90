@@ -895,6 +895,22 @@ contains
           call interior_tendency_forcings(id)%set_rank(num_elements, 1, marbl_status_log, dim1 = num_levels)
         end if
 
+        ! DOC Vent Flux Source
+        if (id .eq. ind%docventflux_id) then
+          found = .true.
+          interior_tendency_forcings(id)%metadata%varname     = 'DOC Vent Flux'
+          interior_tendency_forcings(id)%metadata%field_units = 'mmol/cm^3/s'
+          call interior_tendency_forcings(id)%set_rank(num_elements, 1, marbl_status_log, dim1 = num_levels)
+        end if
+
+        ! DOC fluid Flux Sink
+        if (id .eq. ind%docfluidy_id) then
+          found = .true.
+          interior_tendency_forcings(id)%metadata%varname     = 'DOC fluid Flux'
+          interior_tendency_forcings(id)%metadata%field_units = '1/yr'
+          call interior_tendency_forcings(id)%set_rank(num_elements, 1, marbl_status_log, dim1 = num_levels)
+        end if
+
         ! O2 Consumption Scale Factor
         if (id .eq. ind%o2_consumption_scalef_id) then
           found = .true.
