@@ -20,7 +20,7 @@ cp -R /mnt/lustre/letscher/shared/my_cesm_sandbox /mnt/lustre/letscher/jsl1063/m
 9)	marbl_init_mod.F90
   cd /mnt/lustre/letscher/jsl1063/my_cesm_sandbox_hydrothermal/components/pop/externals/MARBL/src
 
-10)	user_nl_pop_ventdoc_final.x3Feinputs\
+10)	user_nl_pop_ventdoc_combind.x3Feinputs
 	cd /mnt/lustre/letscher/shared/SourceCode_gx3v7
 
 
