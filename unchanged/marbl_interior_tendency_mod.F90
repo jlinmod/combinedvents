@@ -410,7 +410,7 @@ contains
          tracer_local(:,:), &
          o2_consumption_scalef(:), &
          o2_production(:), o2_consumption(:), &
-         interior_tendencies(:,:), docventflux), docfluidy)
+         interior_tendencies(:,:), docventflux, docfluidy)
 
     ! Compute interior diagnostics
     call marbl_diagnostics_interior_tendency_compute(       &
